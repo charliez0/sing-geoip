@@ -21,8 +21,6 @@ import (
 	"github.com/maxmind/mmdbwriter"
 	"github.com/maxmind/mmdbwriter/inserter"
 	"github.com/maxmind/mmdbwriter/mmdbtype"
-	"github.com/oschwald/geoip2-golang"
-	"github.com/oschwald/maxminddb-golang"
 )
 
 var githubClient *github.Client
@@ -250,7 +248,7 @@ func setActionOutput(name string, content string) {
 }
 
 func main() {
-	err := release("Dreamacro/maxmind-geoip", "sagernet/sing-geoip", "geoip.db", "rule-set")
+	err := release("Loyalsoldier/geoip", "charliez0/sing-geoip", "geoip.db", "rule-set")
 	if err != nil {
 		log.Fatal(err)
 	}
