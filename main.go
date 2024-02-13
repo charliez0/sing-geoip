@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"github.com/oschwald/geoip2-golang"
+	"github.com/oschwald/maxminddb-golang"
 	"io"
 	"net"
 	"net/http"
